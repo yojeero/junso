@@ -1,6 +1,6 @@
 <img src="view/view.jpg">
 
-## [Soho](https://sohoo.vercel.app/) landing template. ##
+## [Soho](https://sohoo.vercel.app/) - landing HTML template ##
 
 
 ```
