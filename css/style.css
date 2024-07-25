@@ -1215,25 +1215,24 @@ footer
 	display : none;	
 }
 
-.map
-{
-	width : 96vw;
-}
-	
-}
-
-@media ( max-width: 80em ) /* screen max 1280px */
-{
-
 .price
 {
 	grid-template-columns : 1fr;
 }
 
-.newsletter ,
+.newsletter,
 .map
 {
 	width : 96vw;
+	margin : 2rem auto 0 auto;
+
+	grid-template-columns : 1fr;
+}
+
+.form, 
+.info
+{
+	padding-bottom: 3rem;
 }
 
 }
