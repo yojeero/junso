@@ -1,12 +1,3 @@
-/* loader 100% */
-var messages = [
-  'Getting programming languages data',  
-  'Building java scripts',
-  'Completing loader',
-  'Almost done'
-]
-function initFakeLoader(n,r,e,o){var n=$(n),f=n.find(".f-loader-percent"),f=n.find(".f-loader-percent"),d=n.find(".f-loader-message"),i=n.find(".f-loader-fill");n.find(".f-max-wait").html(e);var l=performance.now(),s=setInterval(function(){var n=performance.now(),e=Math.min((n-l)/(1e3*r),1),a=Math.min(parseInt(e*messages.length,10),messages.length-1),t=parseInt(100*e,10)+"%",n=100*e+"%";f.html(t),d.html(messages[a]),i.css("width",n),1<=e&&(clearInterval(s),o&&o())},100)}function randomInt(n,e){return Math.floor(Math.random()*(e-n+1))+n}$(document).ready(function(){initFakeLoader("#f-loader",randomInt(0,5),5,function(){console.log("Done ...")})});
-
 /* navigation jQuery */ 
 jQuery(function(){$('.navicon').on('click',function(){$(this).toggleClass('navopen');$('.menu').toggleClass('open');});$('.nav li a').on('click',function(){$('.menu').removeClass('open');$('.navicon').removeClass('navopen');});});
  
