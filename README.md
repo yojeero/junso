@@ -1,4 +1,4 @@
-<img src="preview/view.jpg">
+<img src="preview/preview.jpg">
 
 ## [Vee](https://veevo.vercel.app/) - landing HTML template ##
 
