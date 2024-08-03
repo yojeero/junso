@@ -8,7 +8,7 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title> Soho </title>
+	<title> Vee </title>
 
 	<meta name="description" content=" nail master, salon, beauty, beauty salon" />
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -19,11 +19,10 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-	<link href="https://fonts.googleapis.com/css?family=Poiret+One:400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" />
 
-	<!-- style CSS -->
+	<!-- style CSS -->	 
 	<link rel="stylesheet" href="css/style.css" />
 
 </head>
@@ -36,7 +35,7 @@
 	
 		<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 			<style>
-				.spinner_I8Q1 { animation: spinner_qhi1 .75s linear infinite } .spinner_vrS7 { animation-delay: -.375s } @keyframes spinner_qhi1 { 0%, 100% { r: 1.5px } 50% { r: 3px } }
+.spinner_I8Q1 { animation : spinner_qhi1 .75s linear infinite } .spinner_vrS7 { animation-delay : -.375s } @keyframes spinner_qhi1 { 0% , 100% { r : 1.5px } 50% { r : 3px } }
 			</style>
 			<circle class="spinner_I8Q1" cx="4" cy="12" r="1.5" />
 			<circle class="spinner_I8Q1 spinner_vrS7" cx="12" cy="12" r="3" />
@@ -51,31 +50,38 @@
 
 		<!-- header slider -->
 
-		<header id="home" class="head">
+		<header id="home">		
+			
+			<!-- slider -->
 
-			<!-- menu -->
+			<div class="slider_pokemon">
 
-			<div class="navicon">
-				<div class="hamburger"></div>
-			</div>
+					<!-- menu -->
+
+				<div class="navicon">
+					
+					<div class="line-menu-top"></div>
+					<div class="line-menu-bottom"></div>
+
+				</div>
+				  
+			<!-- </div> -->
 
 			<div class="menu">
 
 				<ul class="nav">
-					<li class="menu_head">SOHO</li>
+					<li class="menu_head">Vee Lab</li>
 					<li><a class="link_to" href="#home">Home</a></li>
 					<li><a class="link_to" href="#folio">Works</a></li>
 					<li><a class="link_to" href="#price">Price</a></li>
 					<li><a class="link_to" href="#showroom">Showroom</a></li>
 					<li><a class="link_to" href="#contact">Contact</a></li>
-					<li class="menu_foot">Copyright © SOHO . All Right Reserved</li>
+					<li class="menu_foot">Copyright © Vee . All Right Reserved</li>
 				</ul>
 
-			</div>		
+			</div>
 			
-			<!-- slider -->
-
-			<div class="slider_pokemon">
+				<!-- slider -->
 
 				<div class="slider_pokemon_nav">
 				<a href="#" class="slide-pok-nav active" data-slide="1">master</a>
@@ -84,7 +90,12 @@
 				</div>
 
 				<div class="poki-all flex-pika flex-active" data-slide="1">
-					<div class="poki-box poki-left">
+
+					<div class="poki-box poki-image">
+						<img src="img/n1.webp" alt="" />
+					</div>
+
+					<div class="poki-box poki-brand">
 						<div class="poki-text">
 							<p class="poki-sub">Best Master</p>
 							<h1 class="poki-big">Nail</h1>
@@ -96,13 +107,20 @@
 							<img src="img/signature.webp" alt="" />
 
 						</div>
-						<p class="text_back">Beauty</p>
+
+						<h2 class="text_back">Beauty</h2>
+
 					</div>
-					<div class="poki-box poki-right"></div>
+
 				</div>
 
 				<div class="poki-all poki-color animate-start" data-slide="2">
-					<div class="poki-box poki-left">
+
+					<div class="poki-box poki-image">
+						<img src="img/n2.webp" alt="" />
+					</div>
+
+					<div class="poki-box poki-brand">
 						<div class="poki-text">
 							<p class="poki-sub">Tatoo Saloon</p>
 							<h1 class="poki-big">Master</h1>
@@ -113,13 +131,20 @@
 							<img src="img/signature.webp" alt="" />
 
 						</div>
-						<p class="text_back">Nail</p>
-					</div>
-					<div class="poki-box poki-right"></div>
+
+						<h2 class="text_back">Nail</h2>
+
+					</div>					
+
 				</div>
 
 				<div class="poki-all poki-color-2 animate-start" data-slide="3">
-					<div class="poki-box poki-left">
+
+					<div class="poki-box poki-image">
+						<img src="img/n3.webp" alt="" />
+					</div>
+
+					<div class="poki-box poki-brand">
 						<div class="poki-text">
 							<p class="poki-sub">Make Up</p>
 							<h1 class="poki-big">Beauty</h1>
@@ -130,12 +155,14 @@
 							<img src="img/signature.webp" alt="" />
 
 						</div>
-						<p class="text_back">Salon</p>
-					</div>
-					<div class="poki-box poki-right"></div>
-				</div>
 
-			</div>
+						<h2 class="text_back">Salon</h2>
+
+					</div>					
+
+				</div>	
+			
+		</div>
 
 		</header>
 
@@ -145,23 +172,17 @@
 
 			<div class="folio-grid">
 
-				<div class="big"><img src="img/20.webp" alt="" /></div>
-				<div><img src="img/21.webp" alt="" /></div>
-				<div><img src="img/22.webp" alt="" /></div>
-				<div><img src="img/23.webp" alt="" /></div>
-				<div><img src="img/24.webp" alt="" /></div>
-				<div><img src="img/25.webp" alt="" /></div>
+				<div class="big"><img src="img/f1.webp" alt="" /></div>
+				<div><img src="img/f2.webp" alt="" /></div>
+				<div><img src="img/f3.webp" alt="" /></div>
+				<div><img src="img/f4.webp" alt="" /></div>				
+				<div><img src="img/f5.webp" alt="" /></div>
 
-			</div>
+				<div><img src="img/f6.webp" alt="" /></div>
 
-		</div>
+				<div class="big2"><img src="img/f7.webp" alt="" /></div>
+				<div class="big3"><img src="img/f8.webp" alt="" /></div>			
 
-		<!-- shot -->
-
-		<div class="shot">
-
-			<div class="shot-card">
-				<h1>Nail<span> Art </span></h1>
 			</div>
 
 		</div>
@@ -169,6 +190,10 @@
 		<!-- price -->
 
 		<div class="price" id="price">
+
+			<h1>Price</h1>			
+
+			<p>Call Us for Discont</p>
 
 			<table>
 
@@ -232,19 +257,7 @@
 					<td>4</td>
 				</tr>
 
-				<tr>
-					<td>Repair of nail</td>
-					<td>3</td>
-				</tr>
-
-				<tr>
-					<td>Shellac Removal</td>
-					<td>4,4</td>
-				</tr>
-
-			</table>
-
-			<table>
+				<!-- 2 -- -->
 
 				<tr>
 					<th>nail cover</th>
@@ -306,133 +319,36 @@
 					<td>28</td>
 				</tr>
 
-				<tr>
-					<td>Art painting</td>
-					<td>from 13</td>
-				</tr>
-
-				<tr>
-					<td>Covering Shellac</td>
-					<td>22</td>
-				</tr>
-
-			</table>
-
-			<table>
-
-				<tr>
-					<th>nail modeling</th>
-					<th>price $</th>
-				</tr>
-
-				<tr>
-					<td>Under the coating</td>
-					<td>49/53</td>
-				</tr>
-
-				<tr>
-					<td>"French white"</td>
-					<td>49/53</td>
-				</tr>
-
-				<tr>
-					<td>"French color"</td>
-					<td>57</td>
-				</tr>
-
-				<tr>
-					<td>"Aquarium effect"</td>
-					<td>60</td>
-				</tr>
-
-				<tr>
-					<td>Strengthening nails</td>
-					<td>38/41</td>
-				</tr>
-
-				<tr>
-					<td>Strengthen french</td>
-					<td>43</td>
-				</tr>
-
-				<tr>
-					<td>Gel nails</td>
-					<td>7,6</td>
-				</tr>
-
-				<tr>
-					<td>Strengthening nails</td>
-					<td>29</td>
-				</tr>
-
-				<tr>
-					<td>Strengthen French</td>
-					<td>32</td>
-				</tr>
-
-				<tr>
-					<td>Strengthen BIO gel</td>
-					<td>33</td>
-				</tr>
-
-				<tr>
-					<td>Strengthening nails</td>
-					<td>29</td>
-				</tr>
-
-				<tr>
-					<td>Strengthen BIO gel</td>
-					<td>32</td>
-				</tr>
-
-				<tr>
-					<td>Сolor BIO gel</td>
-					<td>33</td>
-				</tr>
-
-			</table>
+			</table>		
 
 		</div> <!-- end price box -->
 
-		<!-- newsletter -->
+		<!-- address -->
 
-		<div class="newsletter" id="showroom">
+		<div class="address" id="showroom">		
 
-			<div class="form">
+			<h1>Let`s talk</h1>			
 
-				<form action="js/call.php" method="post" autocomplete="off">
+			<p>Just say hi ...</p>			
 
-					<div>
+			<img src="img/map.png" alt="" />
 
-						<span class="form-icon"><svg>
-								<use xlink:href="#user" />
-							</svg></span>
-						<input type="text" placeholder="your name" required="" onfocus="this.placeholder=''"
-							onblur="this.placeholder='your name'">
+			<div class="info">			
 
-					</div>
+				<div>		
+					<p><svg><use xlink:href="img/icon.svg#chat" /></svg> whatsapp </p>
+					<a href="tel:+70004441122" title="call me">+7 000 444 1122</a>				
+				</div>
 
-					<div class="form-phone">
+				<div>					
+					<p><svg><use xlink:href="img/icon.svg#address" /></svg> address </p>
+					<a href="http://maps.apple.com/maps?q=48.135758, 11.571973" target="_blank">Dultstraße 2-1, 80331, München</a>				
+				</div>
 
-						<span class="form-icon"><svg>
-								<use xlink:href="#tel" />
-							</svg></span>
-						<input type="text" placeholder="your phone" required="" onfocus="this.placeholder=''"
-							onblur="this.placeholder='your phone'">
-
-					</div>
-
-					<div class="column">
-						<button type="submit" name="submit" value="" id="send" class="form-btn">request</button>
-					</div>
-
-				</form>
-
-			</div>
-
-			<div class="newsletter-image">
-
-				<img src="img/33.webp" alt="" />
+				<div>
+					<p><svg><use xlink:href="img/icon.svg#mail" /></svg> e-mail </p>
+					<a href="mailto:vee@gmail.com">vee@gmail.com</a>				
+				</div>
 
 			</div>
 
@@ -441,183 +357,75 @@
 		<!-- map -->
 
 		<div class="map">
-
-			<img src="img/50.webp" alt="" />
-
-			<div class="info">
-
-				<a href="tel:+70004441122" target="_blank">
-					<svg>
-						<use xlink:href="#chat" />
-					</svg>
-				</a>
-
-				<p>whatsapp</p>
-				<a href="tel:+70004441122" title="call me">+7 000 444 1122</a>
-
-				<div class="divider">&#10045; &#10045; &#10045;</div>
-
-				<a href="http://maps.apple.com/maps?q=48.135758, 11.571973" target="_blank">
-					<svg>
-						<use xlink:href="#address" />
-					</svg>
-				</a>
-
-				<p>address</p>
-				<a href="http://maps.apple.com/maps?q=48.135758, 11.571973" target="_blank">Dultstraße 2-1, 80331,
-					München
-				</a>
-
-				<div class="divider">&#10045; &#10045; &#10045;</div>
-
-				<a href="mailto:your-email@gmail.com" target="_blank">
-					<svg>
-						<use xlink:href="#mail" />
-					</svg>
-				</a>
-
-				<p>e-mail</p>
-				<a href="mailto:your-email@gmail.com">your-email@gmail.com</a>
-
-			</div>
-
-			<!-- map -->
-			<div id="map"></div>	
+			
+		   <div id="map"></div>	
 
 		</div>
 
-		<!-- carousel -->
+		<!-- clients -->
 
-		<div class="carousel-slider">
-			<div class="carousel is-set">
-
-				<img src="img/60.webp" class="carousel-seat" alt="" />
-				<img src="img/61.webp" class="carousel-seat" alt="" />
-				<img src="img/62.webp" class="carousel-seat" alt="" />
-				<img src="img/63.webp" class="carousel-seat" alt="" />
-				<img src="img/64.webp" class="carousel-seat" alt="" />
-				<img src="img/65.webp" class="carousel-seat is-ref" alt="" />
-
-				<div class="prev-next">
-					<div class="carousel-toggle prev">Prev</div>
-					<div class="carousel-toggle next" data-toggle="next">Next</div>
-				</div>
-
-			</div>
+		<div class="client">
+		
+			<img src="img/b1.webp" alt="" />
+			<img src="img/b2.webp" alt="" />
+			<img src="img/b3.webp" alt="" />
+			<img src="img/b4.webp" alt="" />
+			<img src="img/b5.webp" alt="" />
+			<img src="img/b6.webp" alt="" />
+		
 		</div>
 
 		<!-- footer -->
 
-		<footer class="copyright" id="contact">
+		<footer id="contact">
 
 			<div class="brand">
 
-				<h1>alice</h1> <span class="h1">anderson</span>
-				<h3>beauty</h3>
+				<p>alice</p>
+
+				<h1>anderson</h1>			
 
 			</div>
 
-			<div class="copy">paris</div>
-			<div class="copy">alice - nail master</div>
+			<h2 class="copyright">A2</h2>
 
-			<div class="copy-fav">
-				<a href="https://pinterest.com/" target="_blank">pinterest</a> &#45;
-				<a href="https://twitter.com/" target="_blank">twitter</a> &#45;
-				<a href="https://youtube.com/" target="_blank">youtube</a> &#45;
-				<a href="https://instagram.com/" target="_blank">instagram</a> &#45;
-				<a href="https://facebook.com/" target="_blank">facebook</a>
+			<div class="fav">
+
+				<div>
+				
+					<a href="https://pinterest.com/" target="_blank">pinterest</a> &#45;
+					<a href="https://twitter.com/" target="_blank">twitter</a> &#45;
+					<a href="https://youtube.com/" target="_blank">youtube</a> &#45;
+					<a href="https://instagram.com/" target="_blank">instagram</a> &#45;
+					<a href="https://facebook.com/" target="_blank">facebook</a>
+
+				</div>
+			
+				<div>all rights reserved &#169; 2021. alice anderson</div>
+			
 			</div>
 
-			<div class="copy">all rights reserved &#169; 2021. alice anderson</div>
-
-			<div class="up"><a href="#"><svg>
-						<use xlink:href="#go-up" />
-					</svg></a></div>
+			<div class="up">
+				<a href="#"><svg><use xlink:href="img/icon.svg#go-up" /></svg></a>
+			</div>
 
 		</footer>
 
 	</div><!-- end container -->
 
 
-	 <!-- yandex maps -->
-	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-
-	<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
-	<script src="js/script.js"></script>
-
+		<!-- SVG -->
+	<script src="https://cdn.jsdelivr.net/npm/svg4everybody@2.1.9/dist/svg4everybody.min.js" onload="svg4everybody({})" async=""></script>		
+	
 	<!-- loader hide -->
 	<script>setTimeout(function () { document.querySelector('.loader').style.display = 'none'; }, 500);</script>
+	
+	<!-- yandex maps -->
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 
-	<!-- yandex maps jQuery -->
-	<script>
-		ymaps.ready(startmap);
-		var myMap, myplacemark;
-
-		function startmap() {
-			myMap = new ymaps.Map("map", {
-				center: [40.7121085, -74.1561562],
-				zoom: 9,
-				controls: ["zoomControl", "fullscreenControl"]
-			});
-			myplacemark = new ymaps.GeoObject({
-				geometry: {
-					type: "Point",
-					coordinates: [40.7121085, -74.1561562]
-				},
-				properties: {
-					balloonContentHeader: "<h4>Medico, dental clinic</h4>",
-					balloonContentBody: "<em>New York., Apple str, 5 </em><br/> 09.00 - 18.00 <br/> 8 000 <strong>001-02-03</strong><p></p>"
-				}
-			}, {
-				iconLayout: "default#image",
-				iconImageHref: "img/pin.png",
-				iconImageSize: [70, 98],
-				iconImageOffset: [-30, -120],
-				iconContentOffset: [0]
-			});
-			myMap.geoObjects.add(myplacemark);
-			myMap.behaviors.disable("scrollZoom")
-		};
-	</script>
-
-	<!-- SVG -->
-
-	<script src="https://cdn.jsdelivr.net/npm/svg4everybody@2.1.9/dist/svg4everybody.min.js" onload="svg4everybody({})" async=""></script>
-
-	<!-- SVG icons -->	
-
-	<svg width="0" height="0" display="none" xmlns="http://www.w3.org/2000/svg">		
-		
-		<symbol id="chat" viewBox="0 0 128 128">
-			<path fill="#3B97D3"
-				d="M82,82v4c0,3.3-2.7,6-6,6H40.4H39L38,92.8l-13,10V96v-4h-4h-4c-3.3,0-6-2.7-6-6V44c0-3.3,2.7-6,6-6h23v-4H17  c-5.5,0-10,4.5-10,10v42c0,5.5,4.5,10,10,10h4v15l19.4-15H76c5.5,0,10-4.5,10-10v-4H82z" />
-			<path fill="#2C3E50"
-				d="M111,22c3.3,0,6,2.7,6,6v42c0,3.3-2.7,6-6,6h-4h-4v4v6.9l-13-10L89,76h-1.4H52c-3.3,0-6-2.7-6-6V28  c0-3.3,2.7-6,6-6H111 M111,18H52c-5.5,0-10,4.5-10,10v42c0,5.5,4.5,10,10,10h35.6L107,95V80h4c5.5,0,10-4.5,10-10V28  C121,22.5,116.5,18,111,18L111,18z" />
-		</symbol>
-
-		<symbol id="address" viewBox="0 0 128 128">
-			<path fill="#2C3E50"
-				d="M63 7.8c-20.3 0-36.8 16.5-36.8 36.8 0 36.8 36.8 58.7 36.8 58.7s36.8-19.3 36.8-58.7c0-20.4-16.5-36.8-36.8-36.8zm.1 90.7c-7.3-5-32.9-24.7-32.9-54 0-18.1 14.7-32.8 32.8-32.8s32.8 14.7 32.8 32.8c0 31.4-25.3 49.4-32.7 54zM63 21c13.2 0 24 10.8 24 24s-10.8 24-24 24-24-10.8-24-24 10.8-24 24-24m0-2c-14.4 0-26 11.6-26 26s11.6 26 26 26 26-11.6 26-26-11.6-26-26-26z" />
-			<path fill="#3B97D3"
-				d="M89.5 81.8c-.4.6-.8 1.2-1.3 1.7 15.1 3.3 24.2 9.3 24.2 15 0 8.4-19.8 17.5-49.4 17.5s-49.4-9-49.4-17.5c0-5.8 9.3-11.8 24.6-15.1l-1.3-1.7c-15.2 3.4-25.3 9.6-25.3 16.8 0 10.8 23 19.5 51.4 19.5s51.4-8.7 51.4-19.5c.1-7.1-9.9-13.3-24.9-16.7z" />
-		</symbol>
-
-		<symbol id="mail" viewBox="0 0 128 128">
-			<path fill="#2C3E50"
-				d="M107,30c3.3,0,6,2.7,6,6v56c0,3.3-2.7,6-6,6H21c-3.3,0-6-2.7-6-6V36c0-3.3,2.7-6,6-6H107 M107,26H21  c-5.5,0-10,4.5-10,10v56c0,5.5,4.5,10,10,10h86c5.5,0,10-4.5,10-10V36C117,30.5,112.5,26,107,26L107,26z" />
-			<path fill="#3B97D3"
-				d="M47.9,65.4L23.2,86.7c-0.8,0.7-0.9,2-0.2,2.8c0.7,0.8,2,0.9,2.8,0.2l25.1-21.7L47.9,65.4z" />
-			<path fill="#3B97D3"
-				d="M80,65.5l-3,2.7l24.8,21.7c0.8,0.7,2.1,0.6,2.8-0.2c0.7-0.8,0.6-2.1-0.2-2.8L80,65.5z" />
-			<path fill="#3B97D3"
-				d="M104.5,38.7c-0.7-0.8-2-0.9-2.8-0.2L64,71.4l-38.2-33c-0.8-0.7-2.1-0.6-2.8,0.2c-0.7,0.8-0.6,2.1,0.2,2.8  l39.5,34.1c0.4,0.3,0.8,0.5,1.3,0.5c0.5,0,0.9-0.2,1.3-0.5c0,0,0,0,0,0l39-34.1C105.1,40.8,105.2,39.5,104.5,38.7z" />
-		</symbol>
-
-		<symbol id="go-up" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-			<circle cx="8" cy="8" r="4" stroke-width="1.3"></circle>
-		</symbol>
-
-	</svg>
+	 <!-- jQuery -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+	<script src="js/script.js"></script>
 
 </body>
 </html>

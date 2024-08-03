@@ -1,15 +1,14 @@
-<img src="preview/preview.jpg">
+<img src="preview/view.jpg">
 
-## [Soho](https://sohoo.vercel.app/) - landing HTML template ##
-
+## [Vee](https://veevo.vercel.app/) - landing HTML template ##
 
 ```
 Features
 ```
 
-- Soho based on CSS Grid Layout
+- Based on CSS Grid Layout
 - Clean and creative landing design
 - HTML5, CSS3, jQuery, SVG icons 
-- Google Fonts and Map
+- Google Fonts and Yandex Maps
 - Fully responsive layout
 - Compatible with modern browsers
