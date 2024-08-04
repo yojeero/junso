@@ -31,7 +31,7 @@ ymaps.ready(startmap);
 					coordinates: [40.7121085, -74.1561562]
 				},
 				properties: {
-					balloonContentHeader: "<h4>Medico, dental clinic</h4>",
+					balloonContentHeader: "<h4>Vee, salon</h4>",
 					balloonContentBody: "<em>New York., Apple str, 5 </em><br/> 09.00 - 18.00 <br/> 8 000 <strong>001-02-03</strong><p></p>"
 				}
 			}, {
