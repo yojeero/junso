@@ -1,0 +1,152 @@
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+}
+
+img {
+  width: 20rem;
+  height: 20rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+span {
+  font-size: 1.6rem;
+}
+
+.container {
+  padding: 10rem 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  column-gap: 3rem;
+  min-height: auto;
+  max-width: 1250px;
+  margin: auto;
+}
+
+.bloc-citation {
+  position: relative;
+  z-index: 2;
+  padding: 5rem 5rem 5rem 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.citation p {
+  font-family: "Playfair Display", serif;
+  font-size: 4.8rem;
+  text-transform: capitalize;
+  margin-bottom: 5rem;
+  max-width: 45rem;
+  position: relative;
+}
+
+.icon-citation {
+  background-image: url(https://lh3.googleusercontent.com/proxy/En_fdcIf8p-_X1Msjzdhj4bvKid1vawCUVYjtCw7n4CHCuCPyxKKoccvlSyWaX9ga8xfMaaHDCCZb29HhMV6YzGF_6xkvQ6Ga4ZPbitKBjiUl3wl5L_JwGOgiA);
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.1;
+}
+
+.bloc-citation-name {
+  display: flex;
+  align-items: center;
+}
+
+.bloc-citation-name img {
+  height: 5.6rem;
+  width: auto;
+}
+
+.name-fondateur {
+  padding-left: 2rem;
+  margin-left: 2rem;
+  border-left: 0.1rem solid;
+}
+
+.bloc-image {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 50rem;
+}
+
+.bloc-image img {
+  position: relative;
+  z-index: 2;
+  width: 80%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-decoration {
+  position: absolute;
+  right: 3rem;
+  top: 3rem;
+  border: 0.8rem solid;
+  border-color: #135b96;
+  width: 80%;
+  height: 100%;
+}
+
+@media screen and (max-width: 1066px) {
+  :root {
+    font-size: 60%;
+  }
+  .bloc-image img {
+    object-position: 0% 25%;
+  }
+  .container {
+    grid-template-columns: auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bloc-image {
+    padding-top: 5rem;
+    justify-content: center;
+  }
+
+  .bloc-citation {
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .icon-citation {
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .bloc-image {
+    width: 100%;
+    height: 40rem;
+  }
+
+  .bloc-image img {
+    width: 100%;
+  }
+
+  .image-decoration {
+    display: none;
+  }
+}
