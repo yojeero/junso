@@ -4,9 +4,34 @@ jQuery(function(){$('.navicon').on('click',function(){$(this).toggleClass('navop
 /* navigation icon animation */ 
 var selector = document.querySelector('.navicon');selector.addEventListener('click', function(){selector.classList.toggle('open');})
 
-/* slider service */
-$(".slide-pok-nav").on("click",function(a){a.preventDefault();a=$(".flex-active").data("slide");var b=$(this).data("slide");$(".slide-pok-nav").removeClass("active");$(this).addClass("active");if(a===b)return!1;$(".slider_pokemon").find(".poki-all[data-slide="+b+"]").addClass("flex-preStart");$(".flex-active").addClass("animate-end");setTimeout(function(){$(".flex-preStart").removeClass("animate-start flex-preStart").addClass("flex-active");$(".animate-end").addClass("animate-start").removeClass("animate-end flex-active")},
-800)});
+/* slider */
+const imageList = document.querySelector('.slider-show');
+const contentList = document.querySelector('.slider-content');
+const images = document.querySelectorAll('.slider-image');
+const content = document.querySelector('.slider-card');
+const pageIndex = document.querySelector('.slider-count');
+const limit = images.length;
+let i = 0;
+
+function scroll(dir) {
+  let imageWidth = images[0].offsetWidth;
+  let contentWidth = content.offsetWidth;
+  dir === 'prev' ? i++ : i--;
+  imageWidth *= i;
+  contentWidth *= i;
+  if (i > 0) return i = 0;
+  if (i === -limit) return i = -(limit-1);
+  pageIndex.textContent = 1 + Math.abs(i);
+  imageList.style.transform = `translateX(${imageWidth}px)`;
+  contentList.style.transform = `translateX(${contentWidth}px)`;
+}
+
+function init(e) {
+  e.target.matches('.slider-prev') && scroll('prev');
+  e.target.matches('.slider-next') && scroll();
+}
+
+document.addEventListener('click',init,false);
  
 /* animate scroll */
 jQuery(function(){$('.link_to').click(function(){var scroll_el=$(this).attr('href');if($(scroll_el).length!=0){$('html, body').animate({scrollTop:$(scroll_el).offset().top},1000);}
