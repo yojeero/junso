@@ -6,5 +6,3 @@
 - HTML5, CSS3, jQuery, SVG icons 
 - Google Fonts and Yandex Maps
 - Fully responsive layout
-
--- All images are for demonstration purposes only. --
