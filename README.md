@@ -1,6 +1,6 @@
 <img src="preview/git.png">
 
-### [Junso](https://junso.vercel.app/) - Tailwind v4 template
+### [Junso](https://junso.vercel.app/) - Tailwind template
 
 - Tailwind CSS v4
 - Simple use Tailwind via CLI
