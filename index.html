@@ -15,12 +15,14 @@
 
 	<link rel="icon" type="image/svg+xml" href="images/fav.svg">
 
+	<script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
 	<!-- style CSS -->	
-	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/style.css" />	
 
 </head>
 
-<body class="bg-neutral-100 text-zinc-700">
+<body>
 
 <!-- LOADER --> 
 	<div class="loader fixed z-50 inset-0 flex items-center justify-center bg-white h-screen w-screen overflow-hidden">
@@ -32,16 +34,16 @@
 	</div>
 
 	<!-- MAIN -->
-<main class="reveal grid w-full justify-center sm:max-sm md:max-lg lg:max-w-5xl text-base leading-relaxed text-slate-700 justify-self-center px-4">
+<main class="reveal grid w-full justify-center sm:max-sm md:max-lg lg:max-w-5xl justify-self-center px-4">
 
 		<!-- header-->
 		<section class="grid w-full lg:min-h-screen place-content-center lg:mt-0 mt-12">	
 
 				<img src="images/top.webp" alt="" class="lg:w-[30vh] w-xs aspect-square object-cover rounded-full mx-auto">				
 			
-				<div class="text-slate-400 mt-10 text-center uppercase text-7xl md:text-8xl lg:text-[20vh]">luxury</div>			
+				<div class="head-top h2 text-slate-300 mt-10 text-center text-7xl md:text-8xl lg:text-[20vh] underline decoration-white first-letter:mr-4 first-letter:text-[18vh] first-letter:text-sky-700">Luxury</div>			
 	
-				<div class="h1 text-sky-700 text-center uppercase text-7xl md:text-8xl lg:text-[20vh]/14">vibe</div>		
+				<div class="h1 text-sky-700 text-center text-7xl md:text-8xl lg:text-[20vh]/14">Vibe</div>	
 				
 					<!-- NAVIGATION -->			
 
@@ -57,7 +59,7 @@
 				</button>	
 
 				<!-- close button -->				
-				<button id="close-nav" class="absolute top-4 right-4 lg:top-8 lg:right-8 w-14 h-14 cursor-pointer bg-red-600 rounded-full z-50" onclick="closeNav()">
+				<button id="close-nav" class="absolute top-4 right-4 lg:top-8 lg:right-8 w-14 h-14 cursor-pointer bg-rose-600 rounded-full z-50" onclick="closeNav()">
 
 					<svg class="w-6 h-6 ml-4 cursor-pointer text-white" viewBox="0 0 24 24">
 						<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
@@ -74,17 +76,17 @@
 					class="fixed z-30 top-0 right-0 h-full w-full overflow-hidden bg-zinc-100 shadow-lg transition-all duration-300">
 		
 					<ul class="nav h-full w-full lg:ml-16 ml-8 
-					grid auto-cols-max content-center justify-start transition duration-500 ">
+					grid auto-cols-max content-center justify-start transition duration-500">
 
-					<li class="text-4xl font-bold text-red-600 pb-16">Junso &reg;</li>
+					<li class="text-4xl font-bold text-rose-600 pb-16">Junso &reg;</li>
 
-					<li><a class="block p-2 text-3xl hover:font-bold hover:text-red-600 transition duration-300" href="#">Home</a></li>
-					<li><a class="block p-2 text-3xl hover:font-bold hover:text-red-600 transition duration-300" href="#luxe">Luxe</a></li>
-					<li><a class="block p-2 text-3xl hover:font-bold hover:text-red-600 transition duration-300" href="#brands">Brands</a></li>    
-					<li><a class="block p-2 text-3xl hover:font-bold hover:text-red-600 transition duration-300" href="#address">Address</a></li>  
-					<li><a class="block p-2 text-3xl hover:font-bold hover:text-red-600 transition duration-300" href="#contact">Contact</a></li>
+					<li><a href="#">Home</a></li>
+					<li><a href="#luxe">Luxe</a></li>
+					<li><a href="#brands">Brands</a></li>    
+					<li><a href="#address">Address</a></li>  
+					<li><a href="#contact">Contact</a></li>
 
-					<li class="flex text-base pt-20">Copyright &copy; Junso</li>
+					<li class="flex pt-20">Copyright &copy; Junso</li>
 
 					</ul>			
 
@@ -95,12 +97,12 @@
 		<!-- FOLIO -->
 		<section id="luxe" class="reveal grid w-full lg:max-w-5xl mt-12 mx-auto lg:min-h-screen place-content-center lg:grid-cols-5 grid-rows-auto">
 
-			<div class="grid w-full p-8 text-mb text-left uppercase col-span-2 row-span-2 place-content-center">
+			<div class="grid w-full p-8 text-left col-span-2 row-span-2 place-content-center">
 			
-				<p class="h2 mb-6 text-6xl lg:text-8xl">Look</p>			
+				<p class="h3 mb-6 text-6xl lg:text-8xl">Look</p>			
 			
-				<p>8500 Beverly Boulevard</p>
-				<p>Los Angeles, CA 90048</p>
+				<p class="text-lg tracking-wide ">8500 Beverly Boulevard</p>
+				<p class="text-lg tracking-wide ">Los Angeles, CA 90048</p>
 			
 			</div>
 
@@ -113,98 +115,98 @@
 		<!-- BRANDS -->
 		<section id="brands" class="reveal grid w-full mt-12 mx-auto lg:min-h-screen place-content-center">
 
-			<div class="grid w-full uppercase text-center place-items-center">
+			<div class="grid w-full text-center place-items-center">
 
-				<p class="h2 text-6xl lg:text-8xl">Stores</p>
-				<p class="text-md text-slate-400 mt-6 mb-10">Beverly Hills Shopping &amp; Stores</p>
+				<p class="h3 text-6xl lg:text-8xl">Stores</p>
+				<p class="text-lg tracking-wide text-slate-400 mt-6 mb-10">Beverly Hills Shopping</p>
 
 			</div>
 
-		<table class="table-auto lg:w-3xl text-center text-sm overflow-hidden">
+		<table class="table-auto lg:w-2xl text-left text-sm font-bold overflow-hidden">
 
-			<thead class="uppercase">
+			<thead>
 				<tr>		
-					<td class="py-5 font-bold border border-gray-200 p-4 bg-gray-100">Brands</td>
-					<td class="py-5 font-bold border border-gray-200 p-4 bg-gray-100">Web address</td>		
+					<td class="border border-gray-200 py-4 pl-8 bg-gray-100">Brands</td>
+					<td class="border border-gray-200 py-4 pl-8 bg-gray-100">Web Address</td>		
 				</tr>
 			</thead>
 
-			<tbody class="bg-stone-50 ">
+			<tbody class="bg-stone-50 text-slate-500">
 
-				<tr class=" py-4">	
-					<td class="py-4 border border-gray-200 p-4" >Balenciaga</td>
-					<td class="py-4 border border-gray-200 p-4">
-					<a class="hover:font-bold hover:text-sky-800 cursor-pointer" href="https://www.balenciaga.com/" target="_blank">www.balenciaga.com</a></td>				
+				<tr>	
+					<td class="border border-gray-200 py-4 pl-8" >Balenciaga</td>
+					<td class="border border-gray-200 py-4 pl-8">
+					<a href="https://www.balenciaga.com/" target="_blank">balenciaga.com</a></td>				
 				</tr>
 
-				<tr class=" py-4">	
-					<td class="py-4 border border-gray-200 p-4" >Bulgari</td>
-					<td class="py-4 border border-gray-200 p-4" ><a class="hover:font-bold hover:text-sky-800 cursor-pointer" href="https://www.bulgari.com/" target="_blank">www.bulgari.com</a></td>	
+				<tr>	
+					<td class="border border-gray-200 py-4 pl-8" >Bulgari</td>
+					<td class="border border-gray-200 py-4 pl-8" ><a href="https://www.bulgari.com/" target="_blank">bulgari.com</a></td>	
 				</tr>
 
-				<tr class=" py-4">
-					<td class="py-4 border border-gray-200 p-4">CHANEL</td>
-					<td class="py-4 border border-gray-200 p-4"><a class="hover:font-bold hover:text-sky-800 cursor-pointer" href="https://www.chanel.com/" target="_blank">www.chanel.com</a></td>					
+				<tr>
+					<td class="border border-gray-200 py-4 pl-8">CHANEL</td>
+					<td class="border border-gray-200 py-4 pl-8"><a href="https://www.chanel.com/" target="_blank">chanel.com</a></td>					
 				</tr>	
 
-				<tr class=" py-4">
-					<td class="py-4 border border-gray-200 p-4">Dior Homme</td>
-					<td class="py-4 border border-gray-200 p-4"><a class="hover:font-bold hover:text-sky-800 cursor-pointer" href="https://www.dior.com/" target="_blank">www.dior.com</a></td>					
+				<tr>
+					<td class="border border-gray-200 py-4 pl-8">Dior Homme</td>
+					<td class="border border-gray-200 py-4 pl-8"><a href="https://www.dior.com/" target="_blank">dior.com</a></td>					
 				</tr>
 
-				<tr class=" py-4">
-					<td class="py-4 border border-gray-200 p-4">Giorgio Armani</td>
-					<td class="py-4 border border-gray-200 p-4"><a class="hover:font-bold hover:text-sky-800 cursor-pointer" href="https://www.armani.com/" target="_blank">www.armani.com</a></td>					
+				<tr>
+					<td class="border border-gray-200 py-4 pl-8">Giorgio Armani</td>
+					<td class="border border-gray-200 py-4 pl-8"><a href="https://www.armani.com/" target="_blank">armani.com</a></td>					
 				</tr>
 
-				<tr class=" py-4">
-					<td class="py-4 border border-gray-200 p-4">Gucci</td>
-					<td class="py-4 border border-gray-200 p-4"><a class="hover:font-bold hover:text-sky-800 cursor-pointer" href="https://www.gucci.com/" target="_blank">www.gucci.com</a></td>					
+				<tr>
+					<td class="border border-gray-200 py-4 pl-8">Gucci</td>
+					<td class="border border-gray-200 py-4 pl-8"><a href="https://www.gucci.com/" target="_blank">gucci.com</a></td>					
 				</tr>
 		
-				<tr class=" py-4">
-					<td class="py-4 border border-gray-200 p-4">Louis Vuitton</td>
-					<td class="py-4 border border-gray-200 p-4"><a class="hover:font-bold hover:text-sky-800 cursor-pointer" href="https://www.louisvuitton.com/" target="_blank">www.louisvuitton.com</a></td>					
+				<tr>
+					<td class="border border-gray-200 py-4 pl-8">Louis Vuitton</td>
+					<td class="border border-gray-200 py-4 pl-8"><a href="https://www.louisvuitton.com/" target="_blank">louisvuitton.com</a></td>					
 				</tr>
 
-				<tr class=" py-4">
-					<td class="py-4 border border-gray-200 p-4">Saint Laurent</td>
-					<td class="py-4 border border-gray-200 p-4"><a class="hover:font-bold hover:text-sky-800 cursor-pointer" href="https://www.ysl.com/" target="_blank">www.ysl.com</a></td>					
+				<tr>
+					<td class="border border-gray-200 py-4 pl-8">Saint Laurent</td>
+					<td class="border border-gray-200 py-4 pl-8"><a href="https://www.ysl.com/" target="_blank">ysl.com</a></td>					
 				</tr>
 
-				<tr class=" py-4">
-					<td class="py-4 border border-gray-200 p-4">Versace</td>
-					<td class="py-4 border border-gray-200 p-4"><a class="hover:font-bold hover:text-sky-800 cursor-pointer" href="https://www.versace.com/" target="_blank">www.versace.com</a></td>					
+				<tr>
+					<td class="border border-gray-200 py-4 pl-8">Versace</td>
+					<td class="border border-gray-200 py-4 pl-8"><a href="https://www.versace.com/" target="_blank">versace.com</a></td>					
 				</tr>
 
-				<tr class=" py-4">
-					<td class="py-4 border border-gray-200 p-4">Breitling</td>
-					<td class="py-4 border border-gray-200 p-4"><a class="hover:font-bold hover:text-sky-800 cursor-pointer" href="https://www.breitling.com/" target="_blank">www.breitling.com</a></td>					
+				<tr>
+					<td class="border border-gray-200 py-4 pl-8">Breitling</td>
+					<td class="border border-gray-200 py-4 pl-8"><a href="https://www.breitling.com/" target="_blank">breitling.com</a></td>					
 				</tr>
 
-				<tr class=" py-4">
-					<td class="py-4 border border-gray-200 p-4">Breguet</td>
-					<td class="py-4 border border-gray-200 p-4"><a class="hover:font-bold hover:text-sky-800 cursor-pointer" href="https://www.breguet.com/" target="_blank">www.breguet.com</a></td>					
+				<tr>
+					<td class="border border-gray-200 py-4 pl-8">Breguet</td>
+					<td class="border border-gray-200 py-4 pl-8"><a href="https://www.breguet.com/" target="_blank">breguet.com</a></td>					
 				</tr>
 
-				<tr class=" py-4">
-					<td class="py-4 border border-gray-200 p-4">Fendi</td>
-					<td class="py-4 border border-gray-200 p-4"><a class="hover:font-bold hover:text-sky-800 cursor-pointer" href="https://www.fendi.com/" target="_blank">www.fendi.com</a></td>					
+				<tr>
+					<td class="border border-gray-200 py-4 pl-8">Fendi</td>
+					<td class="border border-gray-200 py-4 pl-8"><a href="https://www.fendi.com/" target="_blank">fendi.com</a></td>					
 				</tr>
 
-				<tr class=" py-4">
-					<td class="py-4 border border-gray-200 p-4">Cartier</td>
-					<td class="py-4 border border-gray-200 p-4"><a class="hover:font-bold hover:text-sky-800 cursor-pointer" href="https://www.cartier.com/" target="_blank">www.cartier.com</a></td>					
+				<tr>
+					<td class="border border-gray-200 py-4 pl-8">Cartier</td>
+					<td class="border border-gray-200 py-4 pl-8"><a href="https://www.cartier.com/" target="_blank">cartier.com</a></td>					
 				</tr>
 
-				<tr class=" py-4">
-					<td class="py-4 border border-gray-200 p-4">Lanvin</td>
-					<td class="py-4 border border-gray-200 p-4"><a class="hover:font-bold hover:text-sky-800 cursor-pointer" href="https://us.lanvin.com/" target="_blank">www.us.lanvin.com</a></td>					
+				<tr>
+					<td class="border border-gray-200 py-4 pl-8">Lanvin</td>
+					<td class="border border-gray-200 py-4 pl-8"><a href="https://us.lanvin.com/" target="_blank">us.lanvin.com</a></td>					
 				</tr>
 
-				<tr class=" py-4">
-					<td class="py-4 border border-gray-200 p-4">Loro Piana</td>
-					<td class="py-4 border border-gray-200 p-4"><a class="hover:font-bold hover:text-sky-800 cursor-pointer" href="https://us.loropiana.com/" target="_blank">www.us.loropiana.com</a></td>					
+				<tr>
+					<td class="border border-gray-200 py-4 pl-8">Loro Piana</td>
+					<td class="border border-gray-200 py-4 pl-8"><a href="https://us.loropiana.com/" target="_blank">us.loropiana.com</a></td>					
 				</tr>
 		
 			</tbody>
@@ -215,19 +217,19 @@
 		<!-- ADDRESS -->
 		<section id="address" class="reveal grid w-full mt-24 mx-auto lg:min-h-screen place-content-center">
 		
-			<div class="grid w-full uppercase text-center place-items-center">
+			<div class="grid w-full text-center place-items-center">
 		
-				<p class="h2 text-6xl lg:text-8xl">Let`s talk</p>
-				<p class="text-md text-slate-400 mt-6 mb-10">Where we are</p>
+				<p class="h3 text-6xl lg:text-8xl">Let`s talk</p>
+				<p class="text-lg tracking-wide text-slate-400 mt-6 mb-10">Where we are</p>
 		
 			</div>	
 		
 			<div class="grid justify-center lg:grid-cols-2 lg:gap-x-4 gap-y-4 mb-12">
 		
-				<div class="flex justify-center items-center p-8 border-l-6 border-orange-600 md:rounded-md bg-stone-50 md:shadow-md">
+				<div class="address-card flex justify-center items-center p-8 border-l-6 border-rose-600 md:rounded-md bg-stone-50 md:shadow-md">
 
-					<svg class="w-6 h-6 mr-4 text-orange-600" viewBox="0 0 24 24">
-						<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+					<svg class="w-6 h-6 mr-4 text-rose-600" viewBox="0 0 24 24">
+						<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
 							color="currentColor">
 							<path
 								d="m16 10l2.15.645c1.373.412 2.06.618 2.455 1.15c.395.53.395 1.248.395 2.681V22M8 9h3m-3 4h3m1 9v-3c0-.943 0-1.414-.293-1.707S10.943 17 10 17H9c-.943 0-1.414 0-1.707.293S7 18.057 7 19v3m-5 0h20" />
@@ -236,15 +238,15 @@
 						</g>
 					</svg>
 
-					<a class="text-xl text-sky-700 hover:text-black"
+					<a class="text-xl font-bold"
 						href="https://www.google.com/maps?q=34.0675198,-118.4042346" target="_blank">Beverly Boulevard, Los
 						Angeles</a>
 				</div>
 		
-				<div class="flex justify-center items-center p-8 border-l-6 border-orange-600 md:rounded-md bg-stone-50 md:shadow-md">
+				<div class="address-card flex justify-center items-center p-8 border-l-6 border-rose-600 md:rounded-md bg-stone-50 md:shadow-md">
 
-					<svg class="w-6 h-6 mr-4 text-orange-600" viewBox="0 0 24 24">
-						<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+					<svg class="w-6 h-6 mr-4 text-rose-600" viewBox="0 0 24 24">
+						<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
 							color="currentColor">
 							<path d="m7 8.5l2.942 1.74c1.715 1.014 2.4 1.014 4.116 0L17 8.5" />
 							<path
@@ -252,13 +254,13 @@
 						</g>
 					</svg>
 
-					<a class="text-xl text-sky-700 hover:text-black" href="mailto:stores@gmail.com">stores@gmail.com</a>
+					<a class="text-xl font-bold" href="mailto:stores@gmail.com">stores@gmail.com</a>
 				</div>
 		
 			</div>
 		
 			<!-- MAP -->
-			<div class="grid w-[90%] lg:w-full mx-auto max-h-screen min-h-[400px] p-8 mb-12 border-none md:border-1 md:border-solid md:border-zinc-700 bg-white">
+			<div class="map-dark grid w-[90%] lg:w-full mx-auto max-h-screen min-h-[400px] p-4 mb-12 border-none md:border-1 md:border-solid md:border-zinc-700 md:rounded-md bg-white">
 		
 				<div id="map" class="overflow-hidden"></div>
 		
@@ -267,7 +269,7 @@
 		</section>
 
 		<!-- CLIENTS -->
-		<section class="reveal grid lg:w-[90%] mx-auto mb-12 lg:min-h-screen place-content-center">
+		<section class="reveal grid lg:w-[90%] mx-auto mb-12 lg:min-h-screen place-content-center" id="clients">
 
 			<div class="grid justify-center p-8 border-none md:border-1 md:border-solid md:border-zinc-700 grid-cols-5 gap-4 rounded-md">
 		
@@ -289,40 +291,40 @@
 
 			<img class="lg:w-[30vh] w-xs aspect-square object-cover rounded-full mx-auto" src="images/foo.webp" alt="" />			
 
-			<div class="justify-center uppercase  text-center my-12 tracking-wildest">
+			<div class="justify-center text-center my-12 tracking-wildest">
 
-				<p class="text-5xl lg:text-[10vw] text-slate-400">alice</p>
+				<p class="h2 text-5xl lg:text-[10vw] text-slate-400">alice</p>
 
-				<p class="h2 text-sky-700 lg:leading-[7vw] text-6xl lg:text-[14vw]">anderson</p>					
+				<p class="h1 text-sky-700 lg:leading-[7vw] text-6xl lg:text-[14vw]">anderson</p>					
 
 			</div>			
 
-			<p class="h2 text-8xl justify-center mx-auto lg:my-30 py-12 px-22 uppercase text-white bg-orange-600 rounded-sm">A2</p>
+			<p class="h4 text-8xl justify-center mx-auto lg:my-30 py-12 px-22  text-white bg-orange-600 rounded-sm">A2</p>
 
-			<div class="text-sm leading-6 text-center justify-center capitalize tracking-widest">
+			<div class="text-sm leading-6  text-center justify-center capitalize tracking-widest">
 
-				<div class="flex items-center justify-center mx-4 my-12 text-sky-600 font-bold ">
+				<div class="flex items-center font-bold justify-center mx-4 my-12 text-sky-600 ">
 
 					<ul
                         class="flex flex-col gap-6 lg:items-center lg:justify-center md:flex-row">
 
-                        <li><a href="https://pinterest.com/" target="_blank" class="hover:text-sky-700">pinterest</a></li>
+                        <li><a href="https://pinterest.com/" target="_blank">pinterest</a></li>
 
 						&#x2022; 
 						
-                        <li><a href="https://twitter.com/" target="_blank" class="hover:text-sky-700">twitter</a></li>
+                        <li><a href="https://twitter.com/" target="_blank">twitter</a></li>
 
 						&#x2022; 
 
-                        <li><a href="https://youtube.com/" target="_blank" class="hover:text-sky-700">youtube</a></li>
+                        <li><a href="https://youtube.com/" target="_blank">youtube</a></li>
 
 						&#x2022; 
 
-                        <li><a href="https://instagram.com/" target="_blank" class="hover:text-sky-700">instagram</a></li>
+                        <li><a href="https://instagram.com/" target="_blank">instagram</a></li>
 
 						&#x2022; 
 
-                        <li><a href="https://facebook.com/" target="_blank" class="hover:text-sky-700">facebook</a></li>
+                        <li><a href="https://facebook.com/" target="_blank">facebook</a></li>
 
                     </ul>							
 
@@ -341,22 +343,21 @@
 						</path>
 					</svg>
 				</a>
-			</div>
+			</div>			
 
 		</footer>
 
 	</main>
-	
-	
-	  <!-- LOADER HIDE -->
-	  <script>
-		setTimeout(function () {
-		  document.querySelector(".loader").style.display = "none";
-		}, 200);
-	  </script>
+
+	<!-- LIGHT-DARK MODE --> 
+<a class="flex items-end w-full day-night-mode cursor-pointer" id="toggle-day">
+
+    <div class="grid tracking-wide font-bold text-slate-400 mx-auto py-2 px-6 uppercase place-items-center">theme</div>
+
+</a>		
 	
 	<!-- YANDEX MAPS -->
-	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>   
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>   
 	
 	<!-- ALL JS -->
 <script src="js/scrollreveal.min.js"></script> 	

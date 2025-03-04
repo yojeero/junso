@@ -3,6 +3,7 @@
 ### [Junso](https://junso.vercel.app/) - Tailwind template
 
 - Tailwind CSS v4
+- Light and Dark themes
 - Simple use Tailwind via CLI
 - HTML5, CSS3
 - Inline SVG icons 
@@ -24,5 +25,5 @@ Use Tailwind via CLI
 - insert > @import "tailwindcss"; < in input.css  
 - run in terminal > npx @tailwindcss/cli -i ./css/input.css -o ./css/style.css --watch 
 - run again > in terminal > npx @tailwindcss/cli -i ./css/input.css -o ./css/style.css --watch < for build your production CSS
-- remove input.css for production, because all styles were added in the previous step
+- you can remove input.css for production after previous step
 - Enjoy!

@@ -1,0 +1,157 @@
+@import "tailwindcss";
+
+html, body
+{
+	font-family : Poppins, sans-serif;
+	font-weight : 400;
+}
+
+.h1, .h3, .h4, .h5 
+{
+    font-family : Poppins, sans-serif;
+    font-weight : 700;
+}
+
+.h2 
+{
+    font-family : Poppins, sans-serif;
+    font-weight : 400;
+}
+
+body 
+{
+	@apply bg-neutral-100 text-slate-700;
+}
+
+body a:hover
+{
+	@apply text-rose-500 cursor-pointer;
+}
+
+#nav-content li a
+{
+	@apply block p-2 text-3xl;
+}
+
+#nav-content li a:hover
+{
+	@apply font-bold text-red-600 transition duration-300 cursor-pointer;
+}
+
+@font-face
+{
+	font-family : 'Poppins';
+	font-weight : 400;
+	font-style : normal;
+
+	font-display : swap;
+	src : url('../fonts/poppins.woff2') format('woff2');
+} 
+
+@font-face
+{
+	font-family : 'Poppins';
+	font-weight : 700;
+	font-style : normal;
+
+	font-display : swap;
+	src : url('../fonts/poppins-700.woff2') format('woff2');
+} 
+
+.reveal-3Dy
+{
+	animation : slideY 2s ease-in-out forwards;
+}
+
+@keyframes slideY { 0% { transform : translateY(-50%); } 100% { transform : translateY(0); } }
+
+
+/* NIGHT MODE */
+.NightMode 
+{
+
+html ,
+body
+{
+	@apply bg-slate-800;
+
+}
+
+body p
+{
+	@apply text-slate-500;
+
+}
+
+body a
+{
+	@apply text-slate-600;
+}
+
+body a:hover
+{
+	@apply text-rose-500 cursor-pointer;
+}
+
+.h1,
+.h3
+{
+	@apply text-rose-700;
+}
+
+.h2
+{
+	@apply text-slate-700;
+}
+
+.h4
+{
+	@apply text-slate-100;
+}
+
+.head-top
+{
+	@apply first-letter:text-rose-700 decoration-rose-700;
+}
+
+table thead,
+tr,
+td
+{	
+	@apply text-slate-500 bg-slate-900 border-slate-700;
+}
+
+#nav-content,
+#nav-content ul li
+{
+	@apply bg-rose-700 text-neutral-100;
+}
+
+#nav-content ul li a,
+#nav-content ul li a:hover
+{
+	@apply text-neutral-100;
+}
+
+#close-nav
+{
+	@apply bg-rose-600;
+}
+
+.address-card, .map-dark
+{
+	@apply bg-slate-800;
+}
+
+#clients img
+{
+	@apply backdrop-invert;
+}
+
+footer img
+{
+	@apply opacity-50;
+}
+
+
+}
