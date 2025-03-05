@@ -8,18 +8,11 @@ window.sr = ScrollReveal();sr.reveal('.reveal');
 
 // Day-Night Switcher
 const toggle = document.querySelector("#toggle-day");
-toggle.addEventListener("click", modeSwitch);
-function modeSwitch() {
-let root = document.documentElement;
-let icon = document.querySelector("#toggle-day-icon");
-if (root.classList.contains("NightMode")) {
-root.classList.remove("NightMode");
-icon.innerHTML = '<div id="toggle-day-icon" class="w-4 h-4 rounded-full bg-rose-600 cursor-pointer"></div>';
-} else {
-root.classList.add("NightMode");
-icon.innerHTML = '<div class="w-4 h-4 rounded-full bg-blue-500 cursor-pointer"></div>';
-    }
-}
+	const root = document.documentElement;
+
+	toggle.addEventListener("click", () => {
+		root.classList.toggle("NightMode");
+	});
 
 // Nav
 document.addEventListener("DOMContentLoaded", function() {

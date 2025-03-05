@@ -38,6 +38,22 @@ body a:hover
 	@apply font-bold text-red-600 transition duration-300 cursor-pointer;
 }
 
+table
+{	
+	@apply text-left font-bold border-gray-200;
+}
+
+thead, td
+{	
+	@apply border-gray-200 odd:bg-stone-100 even:bg-neutral-100;
+}
+
+table td a
+{	
+	@apply text-slate-500;
+}
+
+
 @font-face
 {
 	font-family : 'Poppins';
@@ -114,11 +130,19 @@ body a:hover
 	@apply first-letter:text-rose-700 decoration-rose-700;
 }
 
-table thead,
-tr,
-td
+table
 {	
 	@apply text-slate-500 bg-slate-900 border-slate-700;
+}
+
+thead, td
+{	
+	@apply border-slate-700	odd:bg-slate-900 even:bg-slate-800;
+}
+
+table td a
+{	
+	@apply text-rose-700;
 }
 
 #nav-content,
