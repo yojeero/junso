@@ -10,9 +10,15 @@ window.sr = ScrollReveal();sr.reveal('.reveal');
 const toggle = document.querySelector("#toggle-day");
 	const root = document.documentElement;
 
-	toggle.addEventListener("click", () => {
-		root.classList.toggle("NightMode");
-	});
+	if (toggle) {
+		toggle.addEventListener("click", () => {
+			if (root.classList.contains("NightMode")) {
+				root.classList.remove("NightMode");
+			} else {
+				root.classList.add("NightMode");
+			}
+		});
+	}
 
 // Nav
 document.addEventListener("DOMContentLoaded", function() {
