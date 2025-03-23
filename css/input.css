@@ -99,13 +99,11 @@ html ,
 body
 {
 	@apply bg-slate-800;
-
 }
 
 body p
 {
 	@apply text-slate-500;
-
 }
 
 body a

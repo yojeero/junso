@@ -4,26 +4,9 @@
 
 - Tailwind CSS v4
 - Light and Dark themes
-- Simple use Tailwind via CLI
 - HTML5, CSS3
 - Inline SVG icons 
 - Local Google Fonts
 - Yandex Maps
 - Fully responsive layout
 
-```
-Tailwind CSS v4 
-
-Don't need tailwind.config anymore.
-Just use > @import "tailwindcss"; < in your .css
-```
-
-Use Tailwind via CLI
-
-- in project folder run in terminal > npm install tailwindcss @tailwindcss/cli  
-- create input.css for your CSS styles
-- insert > @import "tailwindcss"; < in input.css  
-- run in terminal > npx @tailwindcss/cli -i ./css/input.css -o ./css/style.css --watch 
-- run again > in terminal > npx @tailwindcss/cli -i ./css/input.css -o ./css/style.css --watch < for build your production CSS
-- you can remove input.css for production after previous step
-- Enjoy!
