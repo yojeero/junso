@@ -1,6 +1,6 @@
 <img src="preview/git.png">
 
-### [Junso](https://junso.vercel.app/) - Tailwind template
+### [Junso](https://junso.vercel.app/) - tailwind template
 
 - Tailwind CSS v4
 - Light and Dark themes
