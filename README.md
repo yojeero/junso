@@ -1,12 +1,11 @@
-<img src="preview/git.png">
+<img src="preview/git.webp">
 
 ### [Junso](https://junso.vercel.app/) - tailwind template
 
 - Tailwind CSS v4
 - Light and Dark themes
-- HTML5, CSS3
-- Inline SVG icons 
-- Local Google Fonts
+- HTML5 and CSS
+- SVG icons
+- Google Fonts
 - Yandex Maps
-- Fully responsive layout
-
+- 100% Responsive

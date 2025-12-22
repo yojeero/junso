@@ -15,101 +15,106 @@
 
 	<link rel="icon" type="image/svg+xml" href="images/fav.svg">
 
-	<!-- <script src="https://unpkg.com/@tailwindcss/browser@4"></script> -->
-
-	<!-- style CSS -->	
-	<!-- <link rel="stylesheet" href="css/input.css" />	 -->
-	<link rel="stylesheet" href="css/style.css" />	
+	<!-- style CSS -->
+	<link rel="stylesheet" href="css/style.css" />
 
 </head>
 
 <body>
 
-<!-- LOADER --> 
+	<!-- LOADER -->
 	<div class="loader fixed z-50 inset-0 flex items-center justify-center bg-white h-screen w-screen overflow-hidden">
-	
+
 		<div class="h-12 w-12 animate-spin rounded-full border-4
 			  border-solid border-rose-600 border-t-transparent">
 		</div>
-	
+
 	</div>
 
 	<!-- MAIN -->
-<main class="reveal grid max-w-5xl m-auto justify-center justify-self-center sm:max-sm md:max-lg  px-4">
+	<main class="reveal grid max-w-5xl m-auto justify-center justify-self-center sm:max-sm md:max-lg  px-4">
 
 		<!-- header-->
-		<section class="grid w-full lg:min-h-screen place-content-center lg:mt-0 mt-12">	
+		<section class="grid w-full lg:min-h-screen place-content-center lg:mt-0 mt-12">
 
-				<img src="images/top.webp" alt="" class="lg:w-[30vh] w-xs aspect-square object-cover rounded-full mx-auto">				
-			
-				<div class="head-top h2 text-slate-300 mt-10 text-center text-7xl md:text-8xl lg:text-[20vh] underline decoration-white first-letter:mr-4 first-letter:text-[18vh] first-letter:text-sky-700">Luxury</div>			
-	
-				<div class="h1 text-sky-700 text-center text-7xl md:text-8xl lg:text-[20vh]/14">Vibe</div>	
-				
-					<!-- NAVIGATION -->			
+			<img src="images/top.webp" alt="" class="lg:w-[30vh] w-xs aspect-square object-cover rounded-full mx-auto">
 
-				<!-- open button -->				
-				<button id="menu" class="absolute top-4 right-4 lg:top-8 lg:right-8 w-14 h-14 cursor-pointer bg-sky-600 rounded-full" onclick="openNav()">			
+			<div
+				class="head-top h2 text-slate-300 mt-10 text-center text-7xl md:text-8xl lg:text-[20vh] underline decoration-white first-letter:mr-4 first-letter:text-[18vh] first-letter:text-sky-700">
+				Luxury</div>
 
-					<svg class="w-6 h-6 ml-4 cursor-pointer text-white" viewBox="0 0 24 24">
-						<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-							d="M7 15c0 3.3 0 4.95 1.025 5.975S10.7 22 14 22s4.95 0 5.975-1.025S21 18.3 21 15s0-4.95-1.025-5.975S17.3 8 14 8S9.05 8 8.025 9.025S7 11.7 7 15M9.58 2l1.346 1.11c.716.591 1.074.886 1.074 1.254h-1c-3.771 0-5.657 0-6.828 1.171S3 8.592 3 12.364V13"
-							color="currentColor" />
-					</svg>				
-				
-				</button>	
+			<div class="h1 text-sky-700 text-center text-7xl md:text-8xl lg:text-[20vh]/14">Vibe</div>
 
-				<!-- close button -->				
-				<button id="close-nav" class="absolute top-4 right-4 lg:top-8 lg:right-8 w-14 h-14 cursor-pointer bg-rose-600 rounded-full z-50" onclick="closeNav()">
+			<!-- NAVIGATION -->
 
-					<svg class="w-6 h-6 ml-4 cursor-pointer text-white" viewBox="0 0 24 24">
-						<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-							color="currentColor">
-							<path d="M13 6H8.5a4.5 4.5 0 0 0 0 9H20" />
-							<path d="M17 12s3 2.21 3 3s-3 3-3 3" />
-						</g>
-					</svg>
+			<!-- open button -->
+			<button id="menu"
+				class="absolute top-4 right-4 lg:top-8 lg:right-8 w-14 h-14 cursor-pointer bg-sky-600 rounded-full"
+				onclick="openNav()">
 
-				</button>
+				<svg class="w-6 h-6 ml-4 cursor-pointer text-white" viewBox="0 0 24 24">
+					<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+						stroke-width="1.5"
+						d="M7 15c0 3.3 0 4.95 1.025 5.975S10.7 22 14 22s4.95 0 5.975-1.025S21 18.3 21 15s0-4.95-1.025-5.975S17.3 8 14 8S9.05 8 8.025 9.025S7 11.7 7 15M9.58 2l1.346 1.11c.716.591 1.074.886 1.074 1.254h-1c-3.771 0-5.657 0-6.828 1.171S3 8.592 3 12.364V13"
+						color="currentColor" />
+				</svg>
 
-				<!-- Nav Content-->
-				<div id="nav-content"
-					class="fixed z-30 top-0 right-0 h-full w-full overflow-hidden bg-zinc-100 shadow-lg transition-all duration-300">
-		
-					<ul class="nav h-full w-full lg:ml-16 ml-8 
+			</button>
+
+			<!-- close button -->
+			<button id="close-nav"
+				class="absolute top-4 right-4 lg:top-8 lg:right-8 w-14 h-14 cursor-pointer bg-rose-600 rounded-full z-50"
+				onclick="closeNav()">
+
+				<svg class="w-6 h-6 ml-4 cursor-pointer text-white" viewBox="0 0 24 24">
+					<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+						stroke-width="1.5" color="currentColor">
+						<path d="M13 6H8.5a4.5 4.5 0 0 0 0 9H20" />
+						<path d="M17 12s3 2.21 3 3s-3 3-3 3" />
+					</g>
+				</svg>
+
+			</button>
+
+			<!-- Nav Content-->
+			<div id="nav-content"
+				class="fixed z-30 top-0 right-0 h-full w-full overflow-hidden bg-zinc-100 shadow-lg transition-all duration-300">
+
+				<ul class="nav h-full w-full lg:ml-16 ml-8 
 					grid auto-cols-max content-center justify-start transition duration-500">
 
 					<li class="text-4xl font-bold text-rose-600 pb-16">Junso &reg;</li>
 
 					<li><a href="#">Home</a></li>
 					<li><a href="#luxe">Luxe</a></li>
-					<li><a href="#brands">Brands</a></li>    
-					<li><a href="#address">Address</a></li>  
+					<li><a href="#brands">Brands</a></li>
+					<li><a href="#address">Address</a></li>
 					<li><a href="#contact">Contact</a></li>
 
 					<li class="flex pt-20">Copyright &copy; Junso</li>
 
-					</ul>			
+				</ul>
 
-				</div>		
-
-		</section>	
-
-		<!-- FOLIO -->
-		<section id="luxe" class="reveal grid w-full lg:max-w-5xl mt-12 mx-auto lg:min-h-screen place-content-center lg:grid-cols-5 grid-rows-auto">
-
-			<div class="grid w-full p-8 text-left col-span-2 row-span-2 place-content-center">
-			
-				<p class="h3 mb-6 text-6xl lg:text-8xl">Look</p>			
-			
-				<p class="text-lg tracking-wide ">8500 Beverly Boulevard</p>
-				<p class="text-lg tracking-wide ">Los Angeles, CA 90048</p>
-			
 			</div>
 
-				<img class="reveal-3Dy col-span-2 row-span-2 lg:shadow-2xl" src="images/f1.webp" alt="" />
-				<img class="row-span-2" src="images/f2.webp" alt="" />
-				<img class="col-start-2 col-end-3" src="images/f3.webp" alt="" />			
+		</section>
+
+		<!-- FOLIO -->
+		<section id="luxe"
+			class="reveal grid w-full lg:max-w-5xl mt-12 mx-auto lg:min-h-screen place-content-center lg:grid-cols-5 grid-rows-auto">
+
+			<div class="grid w-full p-8 text-left col-span-2 row-span-2 place-content-center">
+
+				<p class="h3 mb-6 text-6xl lg:text-8xl">Look</p>
+
+				<p class="text-lg tracking-wide ">8500 Beverly Boulevard</p>
+				<p class="text-lg tracking-wide ">Los Angeles, CA 90048</p>
+
+			</div>
+
+			<img class="reveal-3Dy col-span-2 row-span-2 lg:shadow-2xl" src="images/f1.webp" alt="" />
+			<img class="row-span-2" src="images/f2.webp" alt="" />
+			<img class="col-start-2 col-end-3" src="images/f3.webp" alt="" />
 
 		</section>
 
@@ -123,115 +128,117 @@
 
 			</div>
 
-		<table class="table-auto max-w-[90%] lg:w-3xl mx-auto">
+			<table class="table-auto max-w-[90%] lg:w-3xl mx-auto">
 
-			<thead>
-				<tr>		
-					<td>Brands</td>
-					<td>Web Address</td>		
-				</tr>
-			</thead>
+				<thead>
+					<tr>
+						<td>Brands</td>
+						<td>Web Address</td>
+					</tr>
+				</thead>
 
-			<tbody>
+				<tbody>
 
-				<tr>	
-					<td>Balenciaga</td>
-					<td>
-					<a href="https://www.balenciaga.com/" target="_blank">balenciaga.com</a></td>				
-				</tr>
+					<tr>
+						<td>Balenciaga</td>
+						<td>
+							<a href="https://www.balenciaga.com/" target="_blank">balenciaga.com</a>
+						</td>
+					</tr>
 
-				<tr>		
-					<td>Bulgari</td>
-					<td><a href="https://www.bulgari.com/" target="_blank">bulgari.com</a></td>	
-				</tr>
+					<tr>
+						<td>Bulgari</td>
+						<td><a href="https://www.bulgari.com/" target="_blank">bulgari.com</a></td>
+					</tr>
 
-				<tr>	
-					<td>CHANEL</td>
-					<td><a href="https://www.chanel.com/" target="_blank">chanel.com</a></td>					
-				</tr>	
+					<tr>
+						<td>CHANEL</td>
+						<td><a href="https://www.chanel.com/" target="_blank">chanel.com</a></td>
+					</tr>
 
-				<tr>	
-					<td>Dior Homme</td>
-					<td><a href="https://www.dior.com/" target="_blank">dior.com</a></td>					
-				</tr>
+					<tr>
+						<td>Dior Homme</td>
+						<td><a href="https://www.dior.com/" target="_blank">dior.com</a></td>
+					</tr>
 
-				<tr>	
-					<td>Giorgio Armani</td>
-					<td><a href="https://www.armani.com/" target="_blank">armani.com</a></td>					
-				</tr>
+					<tr>
+						<td>Giorgio Armani</td>
+						<td><a href="https://www.armani.com/" target="_blank">armani.com</a></td>
+					</tr>
 
-				<tr>	
-					<td>Gucci</td>
-					<td><a href="https://www.gucci.com/" target="_blank">gucci.com</a></td>					
-				</tr>
-		
-				<tr>	
-					<td>Louis Vuitton</td>
-					<td><a href="https://www.louisvuitton.com/" target="_blank">louisvuitton.com</a></td>					
-				</tr>
+					<tr>
+						<td>Gucci</td>
+						<td><a href="https://www.gucci.com/" target="_blank">gucci.com</a></td>
+					</tr>
 
-				<tr>	
-					<td>Saint Laurent</td>
-					<td><a href="https://www.ysl.com/" target="_blank">ysl.com</a></td>					
-				</tr>
+					<tr>
+						<td>Louis Vuitton</td>
+						<td><a href="https://www.louisvuitton.com/" target="_blank">louisvuitton.com</a></td>
+					</tr>
 
-				<tr>	
-					<td>Versace</td>
-					<td><a href="https://www.versace.com/" target="_blank">versace.com</a></td>					
-				</tr>
+					<tr>
+						<td>Saint Laurent</td>
+						<td><a href="https://www.ysl.com/" target="_blank">ysl.com</a></td>
+					</tr>
 
-				<tr>	
-					<td>Breitling</td>
-					<td><a href="https://www.breitling.com/" target="_blank">breitling.com</a></td>					
-				</tr>
+					<tr>
+						<td>Versace</td>
+						<td><a href="https://www.versace.com/" target="_blank">versace.com</a></td>
+					</tr>
 
-				<tr>	
-					<td>Breguet</td>
-					<td><a href="https://www.breguet.com/" target="_blank">breguet.com</a></td>					
-				</tr>
+					<tr>
+						<td>Breitling</td>
+						<td><a href="https://www.breitling.com/" target="_blank">breitling.com</a></td>
+					</tr>
 
-				<tr>	
-					<td>Fendi</td>
-					<td><a href="https://www.fendi.com/" target="_blank">fendi.com</a></td>					
-				</tr>
+					<tr>
+						<td>Breguet</td>
+						<td><a href="https://www.breguet.com/" target="_blank">breguet.com</a></td>
+					</tr>
 
-				<tr>	
-					<td>Cartier</td>
-					<td><a href="https://www.cartier.com/" target="_blank">cartier.com</a></td>					
-				</tr>
+					<tr>
+						<td>Fendi</td>
+						<td><a href="https://www.fendi.com/" target="_blank">fendi.com</a></td>
+					</tr>
 
-				<tr>	
-					<td>Lanvin</td>
-					<td><a href="https://us.lanvin.com/" target="_blank">us.lanvin.com</a></td>					
-				</tr>
+					<tr>
+						<td>Cartier</td>
+						<td><a href="https://www.cartier.com/" target="_blank">cartier.com</a></td>
+					</tr>
 
-				<tr>	
-					<td>Loro Piana</td>
-					<td><a href="https://us.loropiana.com/" target="_blank">us.loropiana.com</a></td>					
-				</tr>
-		
-			</tbody>
-		</table>
+					<tr>
+						<td>Lanvin</td>
+						<td><a href="https://us.lanvin.com/" target="_blank">us.lanvin.com</a></td>
+					</tr>
+
+					<tr>
+						<td>Loro Piana</td>
+						<td><a href="https://us.loropiana.com/" target="_blank">us.loropiana.com</a></td>
+					</tr>
+
+				</tbody>
+			</table>
 
 		</section>
 
 		<!-- ADDRESS -->
 		<section id="address" class="reveal grid w-full mt-24 mx-auto lg:min-h-screen place-content-center">
-		
+
 			<div class="grid w-full text-center place-items-center">
-		
+
 				<p class="h3 text-6xl lg:text-8xl">Let`s talk</p>
 				<p class="text-lg tracking-wide text-slate-400 mt-6 mb-10">Where we are</p>
-		
-			</div>	
-		
+
+			</div>
+
 			<div class="grid justify-center lg:grid-cols-2 lg:gap-x-4 gap-y-4 mb-12">
-		
-				<div class="address-card flex justify-center items-center p-8 border-l-6 border-rose-600 md:rounded-md bg-stone-50 md:shadow-md">
+
+				<div
+					class="address-card flex justify-center items-center p-8 border-l-6 border-rose-600 md:rounded-md bg-stone-50 md:shadow-md">
 
 					<svg class="w-6 h-6 mr-4 text-rose-600" viewBox="0 0 24 24">
-						<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-							color="currentColor">
+						<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+							stroke-width="2" color="currentColor">
 							<path
 								d="m16 10l2.15.645c1.373.412 2.06.618 2.455 1.15c.395.53.395 1.248.395 2.681V22M8 9h3m-3 4h3m1 9v-3c0-.943 0-1.414-.293-1.707S10.943 17 10 17H9c-.943 0-1.414 0-1.707.293S7 18.057 7 19v3m-5 0h20" />
 							<path
@@ -239,16 +246,17 @@
 						</g>
 					</svg>
 
-					<a class="text-xl font-bold"
-						href="https://www.google.com/maps?q=34.0675198,-118.4042346" target="_blank">Beverly Boulevard, Los
+					<a class="text-xl font-bold" href="https://www.google.com/maps?q=34.0675198,-118.4042346"
+						target="_blank">Beverly Boulevard, Los
 						Angeles</a>
 				</div>
-		
-				<div class="address-card flex justify-center items-center p-8 border-l-6 border-rose-600 md:rounded-md bg-stone-50 md:shadow-md">
+
+				<div
+					class="address-card flex justify-center items-center p-8 border-l-6 border-rose-600 md:rounded-md bg-stone-50 md:shadow-md">
 
 					<svg class="w-6 h-6 mr-4 text-rose-600" viewBox="0 0 24 24">
-						<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-							color="currentColor">
+						<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+							stroke-width="2" color="currentColor">
 							<path d="m7 8.5l2.942 1.74c1.715 1.014 2.4 1.014 4.116 0L17 8.5" />
 							<path
 								d="M2.016 13.476c.065 3.065.098 4.598 1.229 5.733c1.131 1.136 2.705 1.175 5.854 1.254c1.94.05 3.862.05 5.802 0c3.149-.079 4.723-.118 5.854-1.254c1.131-1.135 1.164-2.668 1.23-5.733c.02-.986.02-1.966 0-2.952c-.066-3.065-.099-4.598-1.23-5.733c-1.131-1.136-2.705-1.175-5.854-1.254a115 115 0 0 0-5.802 0c-3.149.079-4.723.118-5.854 1.254c-1.131 1.135-1.164 2.668-1.23 5.733a69 69 0 0 0 0 2.952" />
@@ -257,31 +265,33 @@
 
 					<a class="text-xl font-bold" href="mailto:stores@gmail.com">stores@gmail.com</a>
 				</div>
-		
+
 			</div>
-		
+
 			<!-- MAP -->
-			<div class="map-dark grid w-[90%] lg:w-full mx-auto max-h-screen min-h-[400px] p-4 mb-12 border-none md:border-1 md:border-solid md:border-zinc-700 md:rounded-md bg-white">
-		
+			<div
+				class="map-dark grid w-[90%] lg:w-full mx-auto max-h-screen min-h-[400px] p-4 mb-12 border-none md:border-1 md:border-solid md:border-zinc-700 md:rounded-md bg-white">
+
 				<div id="map" class="overflow-hidden"></div>
-		
+
 			</div><!-- end map -->
-		
+
 		</section>
 
 		<!-- CLIENTS -->
 		<section class="reveal grid lg:w-[90%] mx-auto mb-12 lg:min-h-screen place-content-center" id="clients">
 
-			<div class="grid justify-center p-8 border-none md:border-1 md:border-solid md:border-zinc-700 grid-cols-5 gap-4 rounded-md">
-		
-			<img src="images/brand1.webp" alt="" />
-			<img src="images/brand2.webp" alt="" />
-			<img src="images/brand3.webp" alt="" />
-			<img src="images/brand4.webp" alt="" />
-			<img src="images/brand5.webp" alt="" />			
-			<img class="col-start-2 col-end-3" src="images/brand6.webp" alt="" />
-			<img src="images/brand7.webp" alt="" />
-			<img src="images/brand8.webp" alt="" />		
+			<div
+				class="grid justify-center p-8 border-none md:border-1 md:border-solid md:border-zinc-700 grid-cols-5 gap-4 rounded-md">
+
+				<img src="images/brand1.webp" alt="" />
+				<img src="images/brand2.webp" alt="" />
+				<img src="images/brand3.webp" alt="" />
+				<img src="images/brand4.webp" alt="" />
+				<img src="images/brand5.webp" alt="" />
+				<img class="col-start-2 col-end-3" src="images/brand6.webp" alt="" />
+				<img src="images/brand7.webp" alt="" />
+				<img src="images/brand8.webp" alt="" />
 
 			</div>
 
@@ -290,79 +300,92 @@
 		<!-- FOOTER -->
 		<footer id="contact" class="reveal grid w-full lg:min-h-screen place-content-center mb-30">
 
-			<img class="lg:w-[30vh] w-xs aspect-square object-cover rounded-full mx-auto" src="images/foo.webp" alt="" />			
+			<img class="lg:w-[30vh] w-xs aspect-square object-cover rounded-full mx-auto" src="images/foo.webp"
+				alt="" />
 
 			<div class="justify-center text-center my-12 tracking-wildest">
 
 				<p class="h2 text-5xl lg:text-[10vw] text-slate-400">alice</p>
 
-				<p class="h1 text-sky-700 lg:leading-[7vw] text-6xl lg:text-[14vw]">anderson</p>					
+				<p class="h1 text-sky-700 lg:leading-[7vw] text-6xl lg:text-[14vw]">anderson</p>
 
-			</div>			
+			</div>
 
-			<p class="h4 text-8xl justify-center mx-auto lg:my-30 py-12 px-22  text-white bg-orange-600 rounded-sm">A2</p>
+			<p class="h4 text-8xl justify-center mx-auto lg:my-30 py-12 px-22  text-white bg-orange-600 rounded-sm">A2
+			</p>
 
 			<div class="text-sm leading-6  text-center justify-center capitalize tracking-widest">
 
 				<div class="flex items-center font-bold justify-center mx-4 my-12 text-sky-600 ">
 
-					<ul
-                        class="flex flex-col gap-6 lg:items-center lg:justify-center md:flex-row">
+					<ul class="flex flex-col gap-6 lg:items-center lg:justify-center md:flex-row">
 
-                        <li><a href="https://pinterest.com/" target="_blank">pinterest</a></li>
+						<li><a href="https://pinterest.com/" target="_blank">pinterest</a></li>
 
-						&#x2022; 
-						
-                        <li><a href="https://twitter.com/" target="_blank">twitter</a></li>
+						&#x2022;
 
-						&#x2022; 
+						<li><a href="https://twitter.com/" target="_blank">twitter</a></li>
 
-                        <li><a href="https://youtube.com/" target="_blank">youtube</a></li>
+						&#x2022;
 
-						&#x2022; 
+						<li><a href="https://youtube.com/" target="_blank">youtube</a></li>
 
-                        <li><a href="https://instagram.com/" target="_blank">instagram</a></li>
+						&#x2022;
 
-						&#x2022; 
+						<li><a href="https://instagram.com/" target="_blank">instagram</a></li>
 
-                        <li><a href="https://facebook.com/" target="_blank">facebook</a></li>
+						&#x2022;
 
-                    </ul>							
+						<li><a href="https://facebook.com/" target="_blank">facebook</a></li>
+
+					</ul>
 
 				</div>
-			
+
 				<div>all rights reserved &#169; 2021. alice anderson</div>
-			
+
 			</div>
 
 			<!-- up -->
 			<div class="grid mx-auto justify-center my-20">
-				<a href="#">	
+				<a href="#">
 					<svg class="w-7 h-7 text-sky-700" viewBox="0 0 24 24" fill="currentColor">
 						<path
 							d="M17 8V13C17 16.3137 14.3137 19 11 19C7.68629 19 5 16.3137 5 13V4H3V13C3 17.4183 6.58172 21 11 21C15.4183 21 19 17.4183 19 13V8H23L18 2L13 8H17Z">
 						</path>
 					</svg>
 				</a>
-			</div>		
-			
-				<!-- LIGHT-DARK MODE -->
-				<a class="flex items-end w-full day-night-mode cursor-pointer" id="day-night">
-				
-					<div class="grid tracking-wide font-bold text-slate-400 mx-auto py-2 px-6 uppercase place-items-center">theme</div>
-				
-				</a>
+			</div>
+
+			<!-- LIGHT-DARK MODE -->
+			<a class="flex items-end w-full day-night-mode cursor-pointer" id="day-night">
+
+				<div class="grid tracking-wide font-bold text-slate-400 mx-auto py-2 px-6 uppercase place-items-center">
+					theme</div>
+
+			</a>
 
 		</footer>
 
-	</main>	
-	
+	</main>
+
 	<!-- YANDEX MAPS -->
-<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>   
-	
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+
 	<!-- ALL JS -->
-<script src="js/scrollreveal.min.js"></script> 	
-<script src="js/app.js"></script>
+	<script src="js/scrollreveal.min.js"></script>
+	<script src="js/app.js"></script>
+
+	<!-- LOADER HIDE -->
+	<script>
+		window.addEventListener("load", () => {
+			const loader = document.querySelector(".loader");
+			if (!loader) return;
+			loader.classList.add("opacity-0");
+			setTimeout(() => loader.remove(), 200);
+		});
+	</script>
 
 </body>
+
 </html>
