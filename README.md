@@ -2,7 +2,7 @@
 
 ### [Junso](https://junso.vercel.app/) is a modern luxury landing page template.
 
-It features a smooth animations, brand showcases, and location-based sections—ideal for fashion, retail, or boutique brands.   
+Ideal for fashion, retail, or boutique brands.   
 
 - Responsive layout   
 - Animated navigation & scroll effects   
