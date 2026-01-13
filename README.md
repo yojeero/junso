@@ -1,8 +1,6 @@
 <img src="preview/git.webp">
 
-### [Junso](https://junso.vercel.app/) is a modern luxury landing page template.
-
-Ideal for fashion, retail, or boutique brands.   
+### [Junso](https://junso.vercel.app/) is a modern luxury landing page template for fashion, retail, or boutique brands.   
 
 - Responsive layout   
 - Animated navigation & scroll effects   
