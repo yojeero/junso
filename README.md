@@ -1,4 +1,4 @@
-<img src="preview/view.jpg" width="830">   
+<img src="preview/preview.jpg" width="830">   
 
 ### [Junso](https://junso.vercel.app/) is a modern luxury landing page template for premium brands, boutiques, and high-end retail stores.
 
