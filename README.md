@@ -1,6 +1,6 @@
 <img src="preview/junso.jpg"  width="100%" max-width="800px">       
 
-### [Junso](https://junso.vercel.app/) is a landing for premium brands & boutiques.
+# [Junso](https://junso.vercel.app/) is a landing for premium brands & boutiques.
 
 Responsive layout    
 Brand showcase table  
@@ -8,7 +8,6 @@ Light/Dark theme toggle
 Vanilla JS
 ScrollReveal.js
 Yandex Maps API    
-
 
 The layout focuses on visual storytelling, smooth animations, and a refined user experience inspired by luxury fashion aesthetics. It includes brand showcases, store listings, contact information, interactive navigation, and a map integration.
 
@@ -71,7 +70,7 @@ Clean typography (Google Fonts – Poppins)
 
 - Toggle between day/night mode   
 
-##### Tech Stack   
+### Tech Stack   
 ```
 Bun | Vite | Vercel | Tailwind | Vanilla JS   
 ```
