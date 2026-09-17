@@ -1,8 +1,9 @@
-<img src="preview/junso.jpg"  width="100%">    
+<img src="preview/junso.jpg" width="100%">    
 
 <img src="https://img.shields.io/badge/Junso-7678ed?style=for-the-badge" width="40%" alt="Junso">   
 
-> Junso - Just fork the project and customize it.    
+> [!NOTE]
+> Features 🧼       
   
 - Yandex Maps API    
 - Social media links    
@@ -13,7 +14,7 @@
 - Light/Dark Theme Switcher    
 - Cloud & Static Hosting Ready    
 
-Perfect for:   
+Perfect for 💎   
 
 - Fashion brands   
 - Luxury boutiques   
