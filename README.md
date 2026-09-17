@@ -14,7 +14,8 @@
 - Light/Dark Theme Switcher    
 - Cloud & Static Hosting Ready    
 
-Perfect for 💎   
+> [!TIP]
+> Perfect for 💎   
 
 - Fashion brands   
 - Luxury boutiques   
